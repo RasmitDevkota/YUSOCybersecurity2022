@@ -22,15 +22,15 @@ def generator():
             ascii_character = str(ord(character))
 
             for j in range(32, 128):
-                fizzbuzz_result = ascii_character
+                fizzbuzz_result = str(j)
 
                 if j % 3 == 0:
-                    fizzbuzz_result = fizzbuzz_result.lstrip(ascii_character)
+                    fizzbuzz_result = fizzbuzz_result.lstrip(str(j))
 
                     fizzbuzz_result += "fizz"
 
                 if j % 5 == 0:
-                    fizzbuzz_result = fizzbuzz_result.lstrip(ascii_character)
+                    fizzbuzz_result = fizzbuzz_result.lstrip(str(j))
 
                     fizzbuzz_result += "buzz"
 
@@ -42,7 +42,6 @@ def generator():
                 else:
                     fizzbuzzes[i][j - 32] = str(fizzbuzz_result)
 
-        # return
         test_case_number = str(test_case_counter).zfill(4)
 
         input_file = open("../FizzBuzzes/fizzbuzzchecker_test_cases/input/input{}.txt".format(test_case_number), "w")
