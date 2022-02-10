@@ -23,7 +23,9 @@ def generator(prompt):
     for i in range(c):
         word += alphabet[random.randint(0, 25)]
 
-    
+    return
+
+def generator_mass():
 
     return
 

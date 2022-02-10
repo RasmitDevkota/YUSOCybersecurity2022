@@ -1,5 +1,0 @@
-class PuzzlePiece {
-    constructor() {
-        
-    }
-}
